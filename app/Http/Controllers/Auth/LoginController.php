@@ -37,6 +37,12 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    public function redirectToProvider($service)
+    {
+        //echo "reconnecting";
+        return Socialite::driver($service)->redirect();
+    }
+
     public function handleProviderCallback($service) 
     {
         //echo "reconnecting";
