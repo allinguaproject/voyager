@@ -33,7 +33,11 @@ return [
     'sparkpost' => [
         'secret' => env('SPARKPOST_SECRET'),
     ],
-
+    'facebook' => [ 
+        'client_id' => env ( 'FB_CLIENT_ID' ),
+        'client_secret' => env ( 'FB_CLIENT_SECRET' ),
+        'redirect' => env ( 'FB_REDIRECT' ) 
+    ],
     'stripe' => [
         'model' => App\User::class,
         'key' => env('STRIPE_KEY'),

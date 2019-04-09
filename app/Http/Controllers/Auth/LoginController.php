@@ -52,7 +52,7 @@ class LoginController extends Controller
         //echo "reconnecting";
         
         $userSocial = Socialite::driver($service)->user();
-        //$user = $this->findOrCreateUser($userSocial,  $service);
+        $user = $this->findOrCreateUser($userSocial,  $service);
         //return $user->getEmail();
     }
 
