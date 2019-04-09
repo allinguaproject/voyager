@@ -1,0 +1,210 @@
+/*
+
+#helpdiv{
+  width: 100%;
+  height: 800px;
+}
+
+.navbar{
+  border-bottom-color: #15A2FF;
+  margin: 0px;
+}
+
+#toplinks{
+  margin: 0%;
+  padding: 0%;
+}
+.navilink{
+  width: 100%;
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+.explainbox{
+  padding: 10px;
+  color: #15A2FF;
+  border-style: dashed;
+  border-color: #15A2FF;
+
+}
+
+
+
+.navileiste{
+  padding: 0px;
+  margin: 0px;
+  border-right-width: thin;
+  border-right-style: dashed;
+  border-right-color: #15A2FF;
+}
+
+.learncontent{
+  margin-top: 30px;
+  margin-left: 0px;
+}
+
+
+
+
+.navileiste{
+  margin: 0%;
+  padding: 0%;
+}
+
+.lexikon{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.lexikon-menu{
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  margin-top:40px;
+}
+
+
+
+
+
+
+
+
+.learnUnit{
+  width: 100%;
+  padding-left: 40px;
+}*/
+
+/* CSS for left side bar*/
+
+.vertical-menu {
+  width: 100%; 
+  height: 500px;
+  padding: 0px;
+
+  margin: 0px;
+}
+
+.bold{
+  font-weight: bold;
+}
+.underlined{
+  text-decoration: black;
+  text-decoration-line: underline;
+}
+#toplinks{
+  width: 100%;
+  border-bottom-width: thin;
+  border-bottom-style: dashed;
+  border-bottom-color: #15A2FF;
+  margin: 0px;
+  padding: 0px;
+}
+.lexikon-menu a:hover {
+  font-weight: bold;
+}
+.vertical-menu a {
+  background-color: white; 
+  color: #15A2FF; 
+  margin: 0px;
+  padding: 2px; 
+  display: block; 
+  text-decoration: none; 
+  width: 100%;
+  padding-left: 40px;
+  border-right-width: thin;
+  border-right-style: dashed;
+  border-right-color: #15A2FF;
+}
+
+.learnUnit{
+  width: 100%;
+}
+
+.LektionLink{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+}
+
+.lectionList li{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+}
+
+.lectionList li>a{
+  margin: 0px;
+  padding-left: 60px;
+  width: 100%;
+
+}
+.lectionList{
+  list-style-type: none;
+  padding: 0px;
+
+  margin: 0px;
+  width: 100%;
+}
+
+.container-fluid{
+  margin: 0%;
+  padding: 0%;
+}
+
+.navbar-nav{
+  margin: 0px;
+  padding: 0%;
+}
+
+.navbar-brand{
+  padding-left: 40px;
+  background-color: #15A2FF;
+  color: white;
+  margin-right: 0%;
+}
+.logo{
+  background-color: #15A2FF;
+  margin: 0%;
+  width: 100%;
+}
+
+.checkSolution{
+  background-color: #15A2FF;
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  position: fixed;
+  bottom: 40px;
+  right: 100px; 
+  border-width: 0px;
+  border-radius: 5%;
+  display: inline-block;
+}
+
+.text_yellow_background{
+
+  background-color: yellow;
+}
+.text_blue_background{
+
+  background-color: rgb(0, 102, 255);
+}
+.text_red_background{
+
+  background-color: rgb(255, 60, 0);
+}
+.underline{
+
+  border-bottom-color: #15A2FF;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed
+}
+
+.zwischenzeile{
+  background-color: #15A2FF;
+  width: auto;
+  margin-right: 20%;
+}

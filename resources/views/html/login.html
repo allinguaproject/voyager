@@ -1,0 +1,30 @@
+<div class="login_form_container">
+
+  <!-- Modal Content -->
+    <h3 style="text-align:center;">Please sign in</h3>
+    <div class="col-md-10 offset-md-1">
+      <form    class="modal_form">
+
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          <button class="btn btn-lg btn-primary btn-block google_btn" type="submit">Google</button>
+      <button class="btn btn-lg btn-primary btn-block facebook_btn" type="submit"> <a href="{{route('login.social','facebook')}}">Facebook</a>
+
+      </button>
+
+      </form>
+
+  
+    </div>
+</div>
+
+
+

@@ -1,0 +1,80 @@
+.game-background{
+
+    background-color: #039CBF;
+    height: 1000px;
+}
+
+.main_title{
+text-align: center;
+color: white;
+padding-top: 40px;
+
+}
+.error_box{
+    background-color: rgb(255, 94, 0);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding-top:5px;
+    padding-bottom:5px;
+    display: none;
+}
+
+.Ptable_Inside{
+    text-align: center;
+    width: 100%;
+}
+
+.Ptable_Inside  th{
+
+    word-break: break-word;
+}
+
+.Ptable_Inside  td{
+
+    word-break: break-word;
+}
+.correct_box{
+    background-color: rgb(33, 199, 122);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding-top:5px;
+    padding-bottom:5px;
+    display: none;
+}
+.play_box{
+
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+}
+.practiceTitle{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.BtnFrame{
+    text-align: center;
+}
+.SubmitBtn{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px;
+    background-color: #039CBF;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.Ptable{
+    text-align: center;
+}
+.Ptable_Inside{
+    display: inline; 
+
+}
