@@ -1,5 +1,14 @@
 .body{ padding: 0; margin: 0px;}
 
+.Logo_nav_white{
+    margin: 0%;
+    padding: 0%;
+    width: 100px;
+    height: 50px;
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-image: url("../images/Lingmer_white.png");
+}
 .navbar *{
  font-size: 20px;
  background-color: #039CBF;/*#69CEE5;*/
@@ -13,7 +22,6 @@
 .navbar {
    
     background-color: #039CBF;/*#69CEE5;*/
-   
    margin: 1px;
    border-bottom: 5px;
    border-bottom-color: white;
