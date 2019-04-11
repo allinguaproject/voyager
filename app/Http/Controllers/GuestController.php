@@ -16,7 +16,16 @@ class GuestController extends Controller
         $this->middleware('guest');
     }
 
-    
+    public function getImage($img){
+
+        if(Storage::disk('local')->has($img)){
+        $file=Storage::disk('local')->get($img);
+  
+        //$img=Image::make($file)->resize(200,200);
+        return new Response($file,200);
+        
+        }
+    }
 
     public function index()
     {

@@ -1,14 +1,18 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
-  <a class="navbar-brand">Lingophil</a>
+  
+  <a class="navbar-brand" id="LOGO_nav"> 
+  <img src="{{route('get.image','Lingmer_white.png')}}" alt="" width="18%" >
+  </a>
 
   <ul class="navbar-nav">
-    
+    <!--
     <li class="nav-item active">
       <a class="lingo_nav_item" href="#">Home</a>
     </li>
     <li class="nav-item">
       <a class="lingo_nav_item" href="#">Über Uns</a>
     </li>
+    -->
     
   </ul>
   <ul class="nav navbar-nav flex-row justify-content-between ml-auto">

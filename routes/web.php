@@ -51,7 +51,7 @@ Route::post('/load/practice', 'HomeController@loadPractice')->name('load.practic
 Route::get('/lektion/{lection}', function($lection) {
     return View::make('lex_html.'.$lection);
 });
-Route::get('/getimage/{img}', 'HomeController@getImage')->name('get.image');
+Route::get('/getimage/{img}', 'GuestController@getImage')->name('get.image');
 Route::post('/load/table', 'HomeController@loadPracticeTable')->name('load.table');
 Route::get('/return/{html}', function($html) {
     $str=file_get_contents(base_path("resources/views/html/".$html));
