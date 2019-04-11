@@ -1,7 +1,7 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
   
   <a class="navbar-brand" id="LOGO_nav"> 
-  <img src="{{route('get.image','Lingmer_white.png')}}" alt="" width="18%" >
+  <img src="{{route('get.image','\public\users\Lingmer_white.png')}}" alt="" width="18%" >
   </a>
 
   <ul class="navbar-nav">
