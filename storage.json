@@ -1,0 +1,12 @@
+{
+    "telemetry.machineId": "ac388f93c2df735a9ec4b7cfbeff5d4816c9e52b786d6305e5001eaa772f1bbf",
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "pickerWorkingDir": "/var/www/html",
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///var/www/html/new_test2"
+        ],
+        "files2": []
+    }
+}
