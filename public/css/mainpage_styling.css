@@ -1,3 +1,10 @@
+:root{
+  --font_blue:#72CAC1;
+  --light_light_blue:#DEF7F4;
+  --og_blue: #039CBF;
+  --white:#F7FCFB;
+}
+
 #app{
   background-color: white;
 
@@ -56,14 +63,14 @@ background:  linear-gradient( #18343C,#180432);
 }
 
 .navbar-brand {
-  background-color: #039CBF;/*#69CEE5;*/
+  background-color: var(--light_light_blue);/*#69CEE5;*/
   border-bottom: 5px;
   border-bottom-color: white;
 }
 
 
 .navbar-brand *{
-  background-color: #039CBF;/*#69CEE5;*/
+  background-color: var(--light_light_blue);/*#69CEE5;*/
   color: white;
 }
 
@@ -71,7 +78,7 @@ background:  linear-gradient( #18343C,#180432);
   margin: 0px;
   
   background-size: auto 100%;
-  background-color: #039CBF;/*#69CEE5;*/
+  background-color: var(--light_light_blue);/*#69CEE5;*/
   height: 400px;
 }
 #dices{

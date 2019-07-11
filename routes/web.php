@@ -11,13 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-
+/*
+    Sites available for guests
+*/
+Auth::routes();
 Route::get('login/{service}', 'Auth\LoginController@redirectToProvider')->name('login.social');
 Route::get('callback/{service}', 'Auth\LoginController@handleProviderCallback');
+Route::get('test/provider', 'Auth\LoginController@testProvider');
 
    
 Route::get('/', 'GuestController@index')->name('home')->middleware('guest');
@@ -31,20 +32,34 @@ Route::get('/getGame', 'GuestController@getGame')->name('get.game');
 */
 Route::post('/load/sidebar', 'HomeController@loadSideBar')->name('load.sideBar');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+/*
+    Sites available for  basic members
+*/
 
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
- 
+
+/*
+    Sites available for  premium members
+*/
+
+
+
+/*
+    Sites available for  admin
+*/
+
+
+
+
+
+
 
 
 Route::get('/lexikon', 'HomeController@lexikon')->name('lexikon');
 Route::get('/alt', 'HomeController@alt')->name('alt');
 Route::get('/getSolutions/{index}', 'HomeController@getSolutions')->name('getSolutions');
+Route::get('/userlanding', 'GuestController@UserLandingPage')->name('user.landingpage');
 
 
 Route::post('/load/practice', 'HomeController@loadPractice')->name('load.practice');
@@ -57,3 +72,4 @@ Route::get('/return/{html}', function($html) {
     $str=file_get_contents(base_path("resources/views/html/".$html));
     return $str;
 })->name('load.html');
+

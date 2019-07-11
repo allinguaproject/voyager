@@ -1,3 +1,13 @@
+:root{
+    --font_blue:#72CAC1;
+    --light_light_blue:#DEF7F4;
+    --og_blue: #039CBF;
+    --white:#F7FCFB;
+    --dark_blue:#104DA1;
+    --google_red:  #D84B37;
+    --facebook_blue:#3B5998;
+  }
+  
 .body{ padding: 0; margin: 0px;}
 
 .Logo_nav_white{
@@ -11,25 +21,54 @@
 }
 .navbar *{
  font-size: 20px;
- background-color: #039CBF;/*#69CEE5;*/
+ background-color: var(--white);/*#69CEE5;*/
+ border-bottom: 5px;
+ border-bottom-color: var(--font_blue);
 
- color: white;
+ color:  var(--font_blue);
 
 }
+.card-body{
+    background-color: none;/*#69CEE5;*/
+
+}
+
+.card_img_container{
+    text-align:center;}
+
+.card-title{
+    font-size: 20px;
+    text-align: center;
+    color:  var(--font_blue);
+
+
+}
+
+.card-text{
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-link{
+    font-size: 15px;
+    text-align: center;
+}
 .nav-link a{
-    color: white;
+    color:  var(--font_blue);
 }
 .navbar {
    
-    background-color: #039CBF;/*#69CEE5;*/
+    background-color: var(--white);/*#69CEE5;*/
    margin: 1px;
-   border-bottom: 5px;
-   border-bottom-color: white;
-   color: white;
+   border-bottom: 1px;
+   border-bottom-color: var(--font_blue);
+   border-bottom-style: dashed;
+
+   color: var(--font_blue);
 }
 
 .background_std{
-    background-color: #039CBF;/*#69CEE5;*/
+    background-color: var(--light_light_blue);/*#69CEE5;*/
     margin: 0px;
 }
 
@@ -37,13 +76,17 @@
     margin-left: 20px;
 }
 .jumbo_main{
-    height: 400px;
-    background-color: #039CBF;/*#69CEE5;*/
+    height: 550px;
+    background-color: var(--white);/*#69CEE5;*/
     margin-top: 0px;
     padding: 0px;
+    border-bottom-width: 2px;
+    border-bottom-style: dashed;
+    border-bottom-color: var(--font_blue);
+    margin-bottom: 40px;
 }
 .jumbo_main h1{
-    color: white;
+    color:  var(--font_blue);
     font-size: 50px;
     margin-left: 140px;
     margin-top: 80px;
@@ -63,16 +106,70 @@ a:hover{
     float: left;
     background-image: url("../images/Free Sudoku Games Icons_drei.png");
 }
+
+#mountain_green{
+    position: relative;
+    top: -75px; 
+    width: 100%;
+    height:500px;
+    background-repeat: no-repeat;
+    background-image: url("../images/green_mountaint80s.png");
+    z-index: -1;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background-size: 100% auto;
+    background-position-y: -90px;
+    z-index: 1;
+
+}
+
+.footer{
+    background-color: var(--light_light_blue);
+    border-top-color:  var(--font_blue);
+    border-top-width: 3px;
+    border-top-style: solid;
+    height: 200px;
+    margin-top: 100px;
+}
+
+
+.support_row{
+    border-top-width: 3px;
+    border-color: var(--font_blue);
+    border-top-style: double;
+}
+#gridded_floor{
+    position: relative;
+    top: -150px; 
+    height: 100px;
+    width: 100%;
+    background-size:  auto;
+    background-repeat:none;
+    background-image: url("../images/griddedfloor.png");
+    z-index: 1;
+    
+}
+#bottom_pic_jumbo{
+    position: relative;
+    top: -150px; 
+    height: 200px;
+    background-size:  auto;
+    background-repeat: repeat-x;
+    background-image: url("../images/80sfloorgrid_green.png");
+    z-index: 1;
+    background-position-y: -690px;
+    
+}
 #chooseLevel_bricks{
     text-align: center;
     font-size: 30px;
-    color:#039CBF;
+    color:var(--font_blue);
 }
 .brick_a{
     text-align: center;
     font-size: 20px;
     display: block;
-    color:#039CBF;
+    color:var(--font_blue);
 
 }
 #level1_brick{
@@ -110,7 +207,7 @@ a:hover{
 .membership_overview{
     margin-top: 70px;
     border-top-width: 3px;
-    border-color: #039CBF;
+    border-color: var(--font_blue);
     border-top-style: double;
 }
 
@@ -118,13 +215,68 @@ a:hover{
     margin-top: 40px;
     margin-bottom: 40px;
 
-    color: #039CBF;
+    color: var(--font_blue);
     font-size: 30px;
     text-align: center;
 }
 
 .membership_overview h3{
-    color: #039CBF;
+    color: var(--font_blue);
     font-size: 20px;
     text-align: center;
+}
+
+.support_row h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    color: var(--font_blue);
+    font-size: 30px;
+    text-align: center;
+}
+
+.support_row h3{
+    color: var(--font_blue);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.login_standard{
+    margin-top: 45%;
+    font-size: 20px;
+    color: var(--font_blue);
+}
+
+
+.login_standard .panel-heading{
+    text-align: center;
+    font-size: 30px;
+    color: var(--font_blue);
+
+}
+
+
+.login_standard  button{
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+
+.login_standard  .btn{
+    font-size: 20px;
+
+}
+
+.google_login{
+    background-color: var(--google_red);
+    color:white;
+    padding: 30px;
+}
+.facebook_login{
+    background-color: var(--facebook_blue);
+    color:white;
+    padding: 30px;
+
 }

@@ -1,11 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+
+@include("_parts.nav_top")
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
+            <div class="panel panel-default login_standard">
+                <div class="panel-heading">Social Login</div>
+                <div class="panel-heading">
+                    <a href="#link" class="btn google_login" role="button">Google</a>
+                    <a href="#link" class="btn facebook_login" role="button">Facebook</a>
+
+                </div>
+                <div class="panel-heading">Oder</div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
