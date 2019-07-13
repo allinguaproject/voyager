@@ -19,7 +19,9 @@ Auth::routes();
 Route::get('login/{service}', 'Auth\LoginController@redirectToProvider')->name('login.social');
 Route::get('callback/{service}', 'Auth\LoginController@handleProviderCallback');
 Route::get('test/provider', 'Auth\LoginController@testProvider');
-
+Route::get('/testmls', function () {
+    return view('testMLS');
+});
    
 Route::get('/', 'GuestController@index')->name('home')->middleware('guest');
 Route::get('/home', 'GuestController@index')->name('home');
