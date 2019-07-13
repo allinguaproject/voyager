@@ -11,7 +11,6 @@
 	<meta name="author" content="Codrops" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- food icons -->
-	<link rel="stylesheet" type="text/css" href="{{asset('css/organicfoodicons.css')}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}" />
 
 	<!-- demo styles -->
@@ -134,7 +133,6 @@
 	</script>
 
 	<script src="{{asset('js/classie.js')}}"></script>
-	<script src="{{asset('js/dummydata.js')}}"></script>
 	<script src="{{asset('js/main.js')}}"></script>
     <script src="../../js/app.js"></script>
 
