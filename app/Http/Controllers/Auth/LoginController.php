@@ -53,7 +53,7 @@ class LoginController extends Controller
         
         $userSocial = Socialite::driver($service)->user();
         //$user = $this->findOrCreateUser($userSocial,  $service);
-        return $user->getEmail();
+        return $userSocial->email;
     }
 
     public function findOrCreateUser($user, $provider)
