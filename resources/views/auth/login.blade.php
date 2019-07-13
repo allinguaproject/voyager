@@ -10,8 +10,8 @@
             <div class="panel panel-default login_standard">
                 <div class="panel-heading">Social Login</div>
                 <div class="panel-heading">
-                    <a href="#link" class="btn google_login" role="button">Google</a>
-                    <a href="#link" class="btn facebook_login" role="button">Facebook</a>
+                    <a href="{{ route('login.social','google') }}" class="btn google_login" role="button">Google</a>
+                    <a href="{{ route('login.social','facebook') }}" class="btn facebook_login" role="button">Facebook</a>
 
                 </div>
                 <div class="panel-heading">Oder</div>
