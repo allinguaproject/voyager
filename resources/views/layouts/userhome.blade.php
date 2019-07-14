@@ -131,7 +131,6 @@
 	<script>
 		
 	</script>
-
 	<script src="{{asset('js/classie.js')}}"></script>
 	<script src="{{asset('js/main.js')}}"></script>
     <script src="../../js/app.js"></script>
