@@ -15,8 +15,12 @@ const router = new VueRouter({
 });
 
 
-new Vue({
+const app=new Vue({
   el: '#app',
   router:router,
   render: h => h(App)
-})
+});
+
+export default app;
+
+

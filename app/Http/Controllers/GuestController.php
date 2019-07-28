@@ -27,6 +27,13 @@ class GuestController extends Controller
         }
     }
 
+    public function subPages($name)
+    {
+        $page_path="user.content.".$name;
+        return view($page_path);
+    }
+
+
     public function index()
     {
         return view('mainpage.home');

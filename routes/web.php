@@ -15,6 +15,12 @@
 /*
     Sites available for guests
 */
+
+Route::get('/level/{name}', 'GuestController@subPages')->name('get.Subpage');
+
+
+
+
 Auth::routes();
 Route::get('login/{service}', 'Auth\LoginController@redirectToProvider')->name('login.social');
 Route::get('callback/{service}', 'Auth\LoginController@handleProviderCallback');
@@ -22,6 +28,11 @@ Route::get('test/provider', 'Auth\LoginController@testProvider');
 Route::get('/testmls', function () {
     return view('testMLS');
 });
+
+Route::get('/testnew', function () {
+    return view('user.welcome');
+});
+
    
 Route::get('/', 'GuestController@index')->name('home')->middleware('guest');
 Route::get('/home', 'GuestController@index')->name('home');
@@ -50,6 +61,10 @@ Route::post('/load/sidebar', 'HomeController@loadSideBar')->name('load.sideBar')
 /*
     Sites available for  admin
 */
+
+
+
+
 
 
 
