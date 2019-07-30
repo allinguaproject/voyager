@@ -1,21 +1,35 @@
-@extends("user._parts.nav_top_basic")
-
-@section('title')
-<a class="navbar-brand" href="#pablo">Level 3</a>
-
-@endsection
-
-@section('specific_links')
-    <ul class="navbar-nav 2lv_links">
-        <li  class="nav-item">
-            <a class="nav-link" href="#">test 1</a>
+<nav class="navbar navbar-expand-md fixed-top-sm justify-content-start flex-nowrap bg-dark navbar-dark">
+    <a href="/" class="navbar-brand">Top</a>
+    <ul class="navbar-nav flex-row">
+        <li class="nav-item active">
+            <a class="nav-link px-2" href="#">Link</a>
         </li>
-        <li  class="nav-item">
-            <a class="nav-link " href="#">test 2</a>
+        <li class="nav-item">
+            <a class="nav-link px-2" href="#">Link</a>
         </li>
-
+        <li class="nav-item">
+            <a class="nav-link px-2" href="#">Link</a>
+        </li>
     </ul>
-@endsection
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+    <div class="navbar-collapse collapse pt-2 pt-md-0" id="navbar2">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 
 <script>
